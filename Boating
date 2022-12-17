@@ -1,0 +1,24 @@
+Boating
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c;
+    cin>>a>>b>>c;
+    if(a>(b*75) && a>(c*50))
+    {
+        if(a>=(b*75)+(c*50))
+        {
+            cout<<"Boat is stable";
+        }
+        else
+        {
+            cout<<"Boat will drown";
+        }
+    }
+    else
+    {
+        cout<<"boat will drown";
+    }
+    return 0;
+}

@@ -1,0 +1,29 @@
+Ajay’s T-Shirt
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c,m,n,o,x,y,z,u,v,w;
+    cin>>a>>b>>c>>m>>n>>o>>x>>y>>z;
+    u=(a-(a*b/100))+c;
+    v=(m-(m* n/100))+o;
+    w=(x-(x*y/100))+z;
+    cout<<"In Flipkart Rs."<<u<<endl;
+    cout<<"In Snapdeal Rs."<<v<<endl;
+    cout<<"In Amazon Rs."<<w<<endl;
+    if((u<v) && (u<w))
+    {
+        cout<<"He will prefer Flipkart ";
+    }
+    else if((v<w)  && (v<u))
+    {
+        cout<<"He will prefer Snapdeal";
+    }
+    else
+    {
+        cout<<"He will prefer Amazon";
+        
+    }
+    
+  
+}

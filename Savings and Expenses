@@ -1,0 +1,18 @@
+Savings and Expenses
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,a,b,c,d,e;
+    cin>>n>>a>>b>>c>>d;
+    e=a+b+c+d;
+    if(n<=e)
+    {
+        cout<<"He wants to work hard";
+    }
+    else if(n>=e)
+    {
+        cout<<"He able to manage his expenses";
+    }
+    return 0;
+}

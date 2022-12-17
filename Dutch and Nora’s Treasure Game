@@ -1,0 +1,26 @@
+Dutch and Nora’s Treasure Game
+#include<iostream>
+#include<algorithm>
+#include<math.h>
+using namespace std;
+int main()
+{
+    int a,b,c,x;
+    cin>>a>>b>>c;
+    if(a>b && a<c)
+    {
+        cout<<"The treasure is in box which has number "<<a<<endl;
+    }
+    else if((b>a) && (b<c)||(b>c) && (b<a))
+    {
+        cout<<"The treasure is in box which has number "<<b<<endl;
+    }
+    else
+    {
+        cout<<"The treasure is in box which has number "<<c<<endl;
+    }
+    x=__gcd(a,__gcd(b,c));
+    cout<<"The code to open the box is "<<x;
+    
+
+}

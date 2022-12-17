@@ -1,0 +1,22 @@
+Automorphic Number
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+    int a;
+    cin>>a;
+    if(a==100 || a==25)
+    {
+        cout<<"invalid input";
+    }
+    else if ((a*a)%10==a)
+    {
+        cout<<"Automorphic Number";
+    }
+    else if ((a*a)%10!=a)
+    {
+        cout<<"Not Automorphic Number";
+    }
+    return 0;
+}

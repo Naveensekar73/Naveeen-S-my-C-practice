@@ -1,0 +1,16 @@
+Binfon a Tribal
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a;
+    cin>>a;
+    int x,y,z;
+    x=a/365;
+    y=(a%365)/7;
+    z=(a%365)%7;
+    cout<<x<<endl;
+    cout<<y<<endl;
+    cout<<z<<endl;
+    return 0;
+}

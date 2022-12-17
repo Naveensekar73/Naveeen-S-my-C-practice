@@ -1,0 +1,15 @@
+Treasure Hunt
+#include<iostream>
+using namespace std;
+int main()
+{
+    int g,f,s,sf,sh,op;
+    cin>>g>>f>>s;
+    sf=((g*f)/100);
+    sh=((g-sf)*s/100);
+    op=((g-(sf+sh))/3);
+    cout<<sf<<endl;
+    cout<<sh<<endl;
+    cout<<op<<endl;
+    return 0;
+}

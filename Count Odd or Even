@@ -1,0 +1,24 @@
+Count Odd or Even
+#include<iostream>
+using namespace std;
+int main()
+{
+     int a,i,b=0,c=0;
+     cin>>a;
+     int n[a];
+     for(i=0;i<a;i++)
+     {
+         cin>>n[i];
+     if(n[i]%2==0)
+     {
+        b++; 
+     }
+      else
+     {
+        c++; 
+     }
+    }
+     
+     cout<<"Odd:"<<c<<endl;
+     cout<<"Even:"<<b;
+}

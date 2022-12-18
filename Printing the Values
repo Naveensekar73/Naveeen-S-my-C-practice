@@ -1,0 +1,17 @@
+Printing the Values
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,i;
+    cin>>a;
+    int n[a];
+    for (i=0;i<a;i++)
+    {
+        cin>>n[i];
+    }
+    for(i=0;i<a;i++)
+    {
+        cout<<n[i]<<endl;
+    }
+}

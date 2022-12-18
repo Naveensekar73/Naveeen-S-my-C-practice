@@ -1,0 +1,32 @@
+Prime Number
+#include<iostream>
+using namespace std;
+int main()
+{
+    int num,i,a=0;
+    cin>>num;
+    if(num==0)
+    {
+        cout<<"Not Prime";
+    }
+    else
+    {
+        for(i=2;i<num;i++)
+        {
+            if(num%i==0)
+            {
+                a++;
+            }
+        
+        }
+    }
+    if(a<1)
+    {
+        cout<<"prime";
+    }
+    else
+    {
+        cout<<"Not Prime";
+    }
+    
+}

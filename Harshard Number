@@ -1,0 +1,29 @@
+Harshard Number
+#include<iostream>
+using namespace std;
+int main()
+{
+     int num,tot=0,sum=0,a,b,c;
+     cin>>num;
+     b=num;
+     c=num;
+     while(b>0)
+     {
+         tot++;
+         b=b/10;
+     }
+     for(int i=0;i<=tot;i++)
+     {
+         a=c%10;
+         sum+=a;
+         c=c/10;
+     }
+     if(num%sum==0)
+     {
+         cout<<"Harshard number";
+     }
+     else
+     {
+         cout<<"Not Harshard number";
+     }
+}

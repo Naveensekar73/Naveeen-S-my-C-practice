@@ -1,0 +1,18 @@
+Lets play Cricket
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c,d;
+    float x;
+    cout<<"enter the number of matches played"<<endl;
+    cin>>a;
+    cout<<"enter the number innings batted"<<endl;
+    cin>>b;
+    cout<<"enter number of times notout"<<endl;
+    cin>>c;
+    cout<<"enter runs scored"<<endl;
+    cin>>d;
+    x=d/(b-c);
+    printf("batting average=%.1f",x);
+}

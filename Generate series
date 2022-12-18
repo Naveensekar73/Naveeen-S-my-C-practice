@@ -1,0 +1,21 @@
+Generate series
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,i,even;
+    cin>>a;
+    for(i=1;i<=a;i++)
+    {
+        if(i%2==0)
+        {
+            even=i*i-2;
+        }
+        else
+        {
+            even=i*i+2;
+        }
+        cout<<even<<" ";
+        
+    }
+}

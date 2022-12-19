@@ -1,0 +1,33 @@
+Insert the element in an array
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c,i;
+    cin>>a;
+    int n[a];
+    for(i=0;i<a;i++)
+    {
+        cin>>n[i];
+    }
+    cin>>b;
+    cin>>c;
+    if(b<a)
+    {
+        for(i=a;i>=b;i--)
+        {
+            n[i]=n[i-1];
+        }
+        n[i]=c;
+        a++;
+        for(i=0;i<a;i++)
+        {
+            cout<<n[i]<<endl;
+        }
+    }
+    else
+    {
+        cout<<"Invalid Input";
+    }
+    return 0;
+}

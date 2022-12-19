@@ -1,0 +1,78 @@
+Particulars of the Engineer
+#include<iostream>
+#include<string>
+using namespace std;
+class input
+{
+    public:
+    string str1,str2;
+    int b,c,d;
+    void name() 
+    {
+        //string str;
+        cout<<"Enter the first name ="<<endl;
+        cin>>str1;
+    }
+    void number()
+    {
+        //int b;
+        cout<<"Enter the identity number ="<<endl;
+        cin>>b;
+    }
+    void age()
+    {
+        //string c;
+        cout<<"Enter the age ="<<endl;
+        cin>>c;
+    }
+    void salary()
+    {
+        // d;
+        cout<<"Enter the salary ="<<endl;
+        cin>>d;
+    }
+    void designation()
+    {
+        // e;
+        cout<<"Enter the designation of the Engineer:"<<endl;
+        cin>>str2;
+    }
+}in;
+class output:public input
+{
+    public:
+    void name1()
+    {
+        cout<<"Displaying the particulars of the Engineer"<<endl;
+        cout<<"Name = "<<in.str1<<endl;
+    }
+    void number1()
+    {
+        cout<<"Identity Number = "<<in.b<<endl;
+    }
+    void age1()
+    {
+        cout<<"Age = "<<in.c<<endl;
+    }
+    void salary1()
+    {
+        cout<<"Salary = "<<in.d<<endl;
+    }
+    void designation1()
+    {
+        cout<<"Designition = "<<in.str2<<endl;
+    }
+}out;
+int main()
+{
+    in.name();
+    in.number();
+    in.age();
+    in.salary();
+    in.designation();
+    out.name1();
+    out.number1();
+    out.age1();
+    out.salary1();
+    out.designation1();
+}
